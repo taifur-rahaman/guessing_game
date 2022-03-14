@@ -5,6 +5,7 @@
 ---
 
 - Start Program
+- Import random module
 - Welcome player to the Game
 - Ask player if s/he wants to Play
   - If player doesn't want to play than Quit the program
