@@ -1,4 +1,5 @@
 # importing random module
+import sys
 import random
 
 print("Welcome to the Guessing Game, Where you can test your luck against the computer")
@@ -36,10 +37,10 @@ if lvl == 1:
         guessed += 1
         if guess > target_number:
             guess = int(input("You've guessed too High. Please guess again: "))
+        elif guess == -1:  # for exiting the game in the middle of the game
+            exit()
         elif guess < target_number:
             guess = int(input("You've guessed too Low. Please guess again: "))
-        elif guess == -1:
-            exit()
     else:
         print(f"You WIN!!\nYou've Guess {guessed} times.")
 
@@ -55,10 +56,10 @@ elif lvl == 2:
         guessed += 1
         if guess > target_number:
             guess = int(input("You've guessed too High. Please guess again: "))
+        elif guess == -1:  # for exiting the game in the middle of the game
+            exit()
         elif guess < target_number:
             guess = int(input("You've guessed too Low. Please guess again: "))
-        elif guess == -1:
-            exit()
     else:
         print(f"You WIN!!\nYou've Guess {guessed} times.")
 
@@ -75,10 +76,10 @@ elif lvl == 3:
         guessed += 1
         if guess > target_number:
             guess = int(input("You've guessed too High. Please guess again: "))
+        elif guess == -1:  # for exiting the game in the middle of the game
+            exit()
         elif guess < target_number:
             guess = int(input("You've guessed too Low. Please guess again: "))
-        elif guess == -1:
-            exit()
     else:
         print(f"You WIN!!\nYou've Guess {guessed} times.")
 
@@ -95,10 +96,10 @@ elif lvl == 4:
         guessed += 1
         if guess > target_number:
             guess = int(input("You've guessed too High. Please guess again: "))
+        elif guess == -1:  # for exiting the game in the middle of the game
+            exit()
         elif guess < target_number:
             guess = int(input("You've guessed too Low. Please guess again: "))
-        elif guess == -1:
-            exit()
 
     else:
         print(f"You WIN!!\nYou've Guess {guessed} times.")
