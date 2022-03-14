@@ -6,12 +6,11 @@ print("Welcome to the Guessing Game, Where you can test your luck against the co
 choice = input("Do you dare to play? ")
 
 
-# if the player don't want to play the game quit
+# if the player don't want to play the game exit
 if choice.lower() != "yes":
-    choice_quit = input("Do you want to Quit? (y/n) ")
-    if choice_quit == "y":
-        quit()
-
+    choice_exit = input("Do you want to exit? (y/n) ")
+    if choice_exit == "y":
+        exit()
 
 # if the player want to play the game
 print("Thank you Player for playing the Game")
@@ -22,7 +21,7 @@ lvl_intermediate = 20
 lvl_expert = 30
 lvl_veteran = 50
 
-print("Which level do you want to play?\n1.Easy(1-10)\n2.Intermediate(1-20)\n3.Expert(1-30)\n4.Veteran(1-50)\n\nIf you want to quit than please choose -1\n\n")
+print("Which level do you want to play?\n1.Easy(1-10)\n2.Intermediate(1-20)\n3.Expert(1-30)\n4.Veteran(1-50)\n\nIf you want to exit than please choose -1\n\n")
 lvl = int(input("Enter your choice: "))
 
 # lvl easy
@@ -40,7 +39,7 @@ if lvl == 1:
         elif guess < target_number:
             guess = int(input("You've guessed too Low. Please guess again: "))
         elif guess == -1:
-            quit()
+            exit()
     else:
         print(f"You WIN!!\nYou've Guess {guessed} times.")
 
@@ -59,7 +58,7 @@ elif lvl == 2:
         elif guess < target_number:
             guess = int(input("You've guessed too Low. Please guess again: "))
         elif guess == -1:
-            quit()
+            exit()
     else:
         print(f"You WIN!!\nYou've Guess {guessed} times.")
 
@@ -79,7 +78,7 @@ elif lvl == 3:
         elif guess < target_number:
             guess = int(input("You've guessed too Low. Please guess again: "))
         elif guess == -1:
-            quit()
+            exit()
     else:
         print(f"You WIN!!\nYou've Guess {guessed} times.")
 
@@ -99,10 +98,10 @@ elif lvl == 4:
         elif guess < target_number:
             guess = int(input("You've guessed too Low. Please guess again: "))
         elif guess == -1:
-            quit()
+            exit()
 
     else:
         print(f"You WIN!!\nYou've Guess {guessed} times.")
 
 elif lvl == -1:
-    quit()
+    exit()
